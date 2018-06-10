@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "mobx": "^5.0.0",
+    "mobx-react": "^5.2.2",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -22,6 +26,8 @@
     "@types/node": "^10.3.2",
     "@types/react": "^16.3.17",
     "@types/react-dom": "^16.0.6",
+    "@types/react-router": "^4.0.26",
+    "@types/react-router-dom": "^4.2.7",
     "@types/webpack": "^4.4.0",
     "@types/webpack-env": "^1.13.6",
     "node-sass-chokidar": "^1.3.0",
