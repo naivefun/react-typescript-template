@@ -11,10 +11,12 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-ts": "react-scripts-ts start",
     "start": "PORT=4000 npm-run-all -p watch-css start-ts",
+    "start-win": "set PORT=9999 && set REACT_APP_ENV=development && npm-run-all -p watch-css start-ts",
     "build-ts": "react-scripts-ts build",
     "build": "sh -ac '. ./.env.${REACT_APP_ENV}; npm-run-all build-css build-ts'",
     "build:development": "REACT_APP_ENV=development npm run build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "build:production": "REACT_APP_ENV=production npm run build",
+    "test": "react-scripts-ts test --env=jsdom --watchAll",
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
